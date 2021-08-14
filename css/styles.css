@@ -1,0 +1,89 @@
+body{
+  justify-content: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.container{
+  width: 70px;
+  height: 70px;
+  position: relative;
+}
+#share-toggle{
+  display: none;
+}
+span, a{
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+}
+span{
+  width: 70px;
+  height: 70px;
+  top: 50%;
+  left: 50%;
+  background-color: #eee;
+  color: #333;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 10px 20px red;
+}
+.social-media-list{
+  position: absolute;
+  width: 60px; height: 60px;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.social-media-list a{
+  font-size: 30px;
+  color: white;
+  width: 60px; height: 60px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+#share-toggle:checked ~ .social-media-list a:nth-child(1){
+  background-color: #3B5998;
+  transition-delay: 0s;
+  transform: translateY(-100px);
+}
+#share-toggle:checked ~ .social-media-list a:nth-child(2){
+  background-color: #25D366;
+  transition-delay: 0.1s;
+  transform: translate(70px, -70px);
+}
+#share-toggle:checked ~ .social-media-list a:nth-child(3){
+  background-color: #FFFC00;
+  transition-delay: 0.2s;
+  transform: translateX(100px);
+}
+#share-toggle:checked ~ .social-media-list a:nth-child(4){
+  background-color: #FF0000;
+  transition-delay: 0.3s;
+  transform: translate(70px, 70px);
+}
+#share-toggle:checked ~ .social-media-list a:nth-child(5){
+  background-color: #FF4500;
+  transition-delay: 0.4s;
+  transform: translateY(100px);
+}
+#share-toggle:checked ~ .social-media-list a:nth-child(6){
+  background-color: #00ACEE;
+  transition-delay: 0.5s;
+  transform: translate(-70px, 70px);
+}
+#share-toggle:checked ~ .social-media-list a:nth-child(7){
+  background-color: #EA4C89;
+  transition-delay: 0.6s;
+  transform: translateX(-100px);
+}
+#share-toggle:checked ~ .social-media-list a:nth-child(8){
+  background-color: #0E76A8;
+  transition-delay: 0.7s;
+  transform: translate(-70px, -70px);
+}
